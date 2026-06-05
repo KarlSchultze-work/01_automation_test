@@ -22,6 +22,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+
+    - name: Run automated tests
+      run: |
+        pytest
 
     - name: Run test suite with pytest
       run: |
