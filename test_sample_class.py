@@ -11,5 +11,5 @@ def testDisplayVar2():
 
 def testIncrement():
     test = TestAccount("test",1.0)
-    assert test.incrementVar2() == "Var2 is now: 2.0"
+    assert test.incrementVar2(1.0) == "Var2 is now: 2.0"
 
